@@ -1,0 +1,189 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-06-13 10:46-0500\n"
+"PO-Revision-Date: 2012-05-30 13:25-0600\n"
+"Last-Translator: Guillermo <galvarado@kionetworks.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: settings.py:113
+msgid "English"
+msgstr "Ingles"
+
+#: settings.py:115
+msgid "Spanish"
+msgstr "Español"
+
+#: overrides/password/forms.py:15
+msgid "Old password"
+msgstr "Contraseña anterior"
+
+#: overrides/password/forms.py:19
+msgid "New password"
+msgstr "Nueva contraseña"
+
+#: overrides/password/forms.py:23
+msgid "Confirm new password"
+msgstr "Confirma nueva contraseña"
+
+#: overrides/password/forms.py:53
+msgid "This is not your password, try again"
+msgstr "Esta no es tu contraseña, intenta de nuevo"
+
+#: overrides/password/forms.py:56
+msgid "The passwords does not match."
+msgstr "Las contraseñas no coinciden"
+
+#: overrides/password/panel.py:8
+msgid "Password"
+msgstr "Contraseña"
+
+#: templates/403.html:4 templates/403.html.py:9
+msgid "Forbidden"
+msgstr "Prohibido"
+
+#: templates/403.html:20 templates/404.html:19 templates/500.html:19
+msgid "Home"
+msgstr "Inicio"
+
+#: templates/403.html:24 templates/404.html:23 templates/500.html:23
+msgid "Projects"
+msgstr "Proyectos"
+
+#: templates/404.html:4
+msgid "Page Not Found"
+msgstr "Pagina no encontrada"
+
+#: templates/404.html:9
+msgid "The page you were looking for doesn't exist"
+msgstr "La Página que estas buscando no existe"
+
+#: templates/404.html:10
+msgid "You may have mistyped the address or the page may have moved."
+msgstr ""
+"Pudiste haber escrito mal la direccion  de la pagina o la pagina fue removida"
+
+#: templates/500.html:4 templates/500.html.py:9
+msgid "Internal Server Error"
+msgstr "Error Interno del Servidor"
+
+#: templates/500.html:10
+msgid ""
+"An unexpected error occurred while processing your request.  Please try your "
+"request again."
+msgstr ""
+"Un error inesperado a ocurrido mientras se procesaba tu peticion. Porfavor "
+"intentalo de nuevo"
+
+#: templates/_header.html:3
+msgid "Hello"
+msgstr "Hola"
+
+#: templates/_header.html:4
+msgid "Billing"
+msgstr "Pagos"
+
+#: templates/_header.html:5
+msgid "Settings"
+msgstr "Configuración"
+
+#: templates/_header.html:6
+msgid "Sign Out"
+msgstr "Salir"
+
+#: templates/_messages.html:7
+msgid "Info: "
+msgstr ""
+
+#: templates/_messages.html:13
+msgid "Warning: "
+msgstr ""
+
+#: templates/_messages.html:19
+msgid "Success: "
+msgstr ""
+
+#: templates/_messages.html:25
+msgid "Error: "
+msgstr ""
+
+#: templates/base.html:16
+msgid "OpenStack Dashboard"
+msgstr "Panel OpenStack"
+
+#: templates/switch_tenants.html:12
+msgid "Log-in to tenant"
+msgstr "Entrar al proyecto"
+
+#: templates/password/password.html:8
+msgid "Change your password"
+msgstr "Cambia tu contraseña"
+
+#: templates/password/password.html:12
+msgid "Complete the fields"
+msgstr "Completa los campos"
+
+#: templates/password/password.html:31
+msgid "Description:"
+msgstr "Descripción:"
+
+#: templates/password/password.html:32
+msgid "From here you can modify your password."
+msgstr "Desde aquí puedes modificar tu contraseña."
+
+#: templates/password/password.html:33
+msgid "Password Strength:"
+msgstr "Fortaleza de la contraseña"
+
+#: templates/password/password.html:34
+msgid "Password not entered"
+msgstr "No haz introducido contraseña"
+
+#: templates/password/password.html:40 templates/password/settings.html:6
+msgid "Change password"
+msgstr "Cambiar contraseña"
+
+#: templates/password/password.html:41
+msgid "Cancel"
+msgstr "Cancelar"
+
+#~ msgid "Your password has been updated"
+#~ msgstr "Tu contraseña ha sido cambiada"
+
+#~ msgid "Login"
+#~ msgstr "Entrar"
+
+#~ msgid "Italiano"
+#~ msgstr "Italiano"
+
+#~ msgid "French"
+#~ msgstr "Frances"
+
+#~ msgid "Japanese"
+#~ msgstr "Japones"
+
+#~ msgid "Portuguese"
+#~ msgstr "Portugues"
+
+#~ msgid "Polish"
+#~ msgstr "Polaco"
+
+#~ msgid "Simplified Chinese"
+#~ msgstr "Chino simplificado"
+
+#~ msgid "Traditional Chinese"
+#~ msgstr "Chino tradicional"
+
+#~ msgid "Logged in as"
+#~ msgstr "Conectado como"

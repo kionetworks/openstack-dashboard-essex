@@ -1,0 +1,54 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-06-05 11:22-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: static/horizon/js/horizon.js:211
+msgid "Confirm "
+msgstr "Confirmar "
+
+#: static/horizon/js/horizon.js:212
+msgid "Please confirm your selection. This action cannot be undone."
+msgstr "Porfavor confirma tu acción. Está no prodrá ser deshecha."
+
+#: static/horizon/js/password_strength.js:9
+msgid "Very Weak"
+msgstr "Muy Débil"
+
+#: static/horizon/js/password_strength.js:10
+msgid "Weak"
+msgstr "Débil"
+
+#: static/horizon/js/password_strength.js:11
+msgid "Better"
+msgstr "Mejor, pero no segura"
+
+#: static/horizon/js/password_strength.js:12
+msgid "Medium"
+msgstr "Suficiente, pero podría ser más segura"
+
+#: static/horizon/js/password_strength.js:13
+msgid "Strong"
+msgstr "Segura"
+
+#: static/horizon/js/password_strength.js:14
+msgid "Strongest"
+msgstr "Muy Segura"
+
+#: static/horizon/js/password_strength.js:15
+msgid "Password not entered"
+msgstr "No haz introducido contraseña"

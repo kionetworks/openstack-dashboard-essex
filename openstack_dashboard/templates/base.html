@@ -1,0 +1,39 @@
+{% load branding i18n %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type' />
+    <title>{% block title %}{% endblock %} – {% site_branding %} Dashboard</title>
+    {% block css %}
+      {% include "_stylesheets.html" %}
+      {% if request.META.SERVER_NAME == '201.175.47.171' or request.META.SERVER_NAME == 'manage.kloudopen.com' or request.META.SERVER_NAME == '201.175.47.248' or request.META.SERVER_NAME == '201.175.47.249' or request.META.SERVER_NAME == '201.175.45.68' %}
+      <link href='{{ STATIC_URL }}dashboard/css/bootstrap-suempresa.css' media='screen' rel='stylesheet' />
+      <link href='{{ STATIC_URL }}dashboard/css/suempresa.css' media='screen' rel='stylesheet' />
+      {% endif %}
+      {% if request.META.SERVER_NAME == 'kloudopen.com' %}
+      <link href='{{ STATIC_URL }}dashboard/css/bootstrap-kio.css' media='screen' rel='stylesheet' />
+      <link href='{{ STATIC_URL }}dashboard/css/kio.css' media='screen' rel='stylesheet' />
+      {% endif %}
+    {% endblock %}
+  </head>
+  <body id="{% block body_id %}{% endblock %}" >
+    {% block content %}
+      <div id="container">
+        <h1 class="brand clearfix"><a href="{% url horizon:user_home %}">{% trans "Dashboard" %}</a></h1>
+        {% block sidebar %}{% endblock %}
+        <div id='main_content'>
+          <div class='topbar'>
+          {% include "_header.html" %}
+          {% block page_header %}{% endblock %}
+          </div>
+          {% block main %}{% endblock %}
+        </div>
+        <!--div id="footer" class="small-stripe vertical-stripe black-bg"><div-->
+      </div>
+    {% endblock %}
+    {% block js %}
+      {% include "_scripts.html" %}
+      <script src='{{ STATIC_URL }}horizon/js/fix_issues_ie.js' type='text/javascript' charset="utf-8"></script>
+    {% endblock %}
+  </body>
+</html>

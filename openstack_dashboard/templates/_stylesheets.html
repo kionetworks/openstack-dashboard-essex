@@ -1,0 +1,20 @@
+{% load branding %}
+{% comment %} CSS {% endcomment %}
+<link href='{{ STATIC_URL }}dashboard/css/reset.css' media='screen' rel='stylesheet' />
+<link href='{{ STATIC_URL }}dashboard/css/text.css' media='screen' rel='stylesheet' />
+{% if  request.META.SERVER_NAME == 'kloudopen.com' %}
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}dashboard/css/core/form.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}dashboard/css/core/login-kio.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}dashboard/css/core/kio.button.css" media="screen" />
+<link href='{{ STATIC_URL }}dashboard/css/kio.theme.css' media='screen' rel='stylesheet' />
+{% endif %}
+{% if request.META.SERVER_NAME == '201.175.47.171' or request.META.SERVER_NAME == 'manage.kloudopen.com' or request.META.SERVER_NAME == '201.175.47.248' or request.META.SERVER_NAME == '201.175.47.249' or request.META.SERVER_NAME == '201.175.45.68' %}
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}dashboard/css/core/form.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}dashboard/css/core/login-suempresa.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}dashboard/css/core/suempresa.button.css" media="screen" />
+<link href='{{ STATIC_URL }}dashboard/css/suempresa.theme.css' media='screen' rel='stylesheet' />
+{% endif %}
+
+
+{% comment %} Favicon {% endcomment %}
+<link rel="shortcut icon" href="{{ STATIC_URL }}dashboard/img/{% choose_favicon %}"/>

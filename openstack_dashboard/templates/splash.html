@@ -1,0 +1,53 @@
+{% load i18n %}
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"><html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Login – Kloud Dashboard</title>
+    {% include "_stylesheets.html" %}
+    {% include "_scripts.html" %}
+  </head>
+  <body id="splash" class="small-stripe vertical-stripe black-bg">
+    <div id="mws-container"></div>  
+    <div id="kloud_logo"></div>
+    <div id="mws-login-wrapper">
+        <div id="mws-login">
+            <div id="h1"></div>
+            <div id="mws-login-form">
+                <form class="mws-form" action="/auth/login/" method="POST">{% csrf_token %}
+                  {% if next %}
+                      <input type="hidden" name="{{ redirect_field_name }}" value="{{ next }}" />
+                  {% endif %}
+                  {% for hidden in form.hidden_fields %}
+                    {{ hidden }}
+                  {% endfor %}
+                  {% for field in form.visible_fields %}
+                   {% if field.errors %}
+                    {% for error in field.errors %}
+                      <span class="help-inline">{{ error }}</span>
+                    {% endfor %}
+                  {% endif %}
+                    <div class="mws-form-row">
+                        <div class="mws-form-item large">
+                           {{ field }}
+                        </div>
+                    </div>
+                    {% endfor %}
+                    <div class="mws-form-row">
+                        <input type="submit" value="Iniciar Sesión" class="mws-button green mws-login-button" />
+                    </div>
+                    <div class="mws-form-row">
+                        <a id="forgot_password" href="{% url forgot_password %}">¿Olvidaste tu contraseña?</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="footer-login">
+        <div id="banner">
+        <center>
+      	Tels: DF: 2455-5000 - Mty: 1351-1555 - Gdl: 1204-0606 - Pue: 482-5660 - Qro: 312-2610 - Gto: 251-0995 - Tol: 318-3468 - 01-800-087-1515
+        </center>
+        </div>
+    </div>
+  </body>
+</html>

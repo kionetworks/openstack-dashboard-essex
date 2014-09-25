@@ -1,0 +1,10 @@
+{% load i18n %}
+<div id="user_info" class="pull-right mws-inset">
+  <span>{% trans "Hello" %}, {{ request.user.username }}</span><br />
+  {% comment %}
+  <a href="{% url horizon:settings:user:index %}">{% trans "Billing" %}</a>|
+  {% endcomment %}
+  <a href="{% url horizon:settings:user:index %}">{% trans "Settings" %}</a>|
+  <a href="{% url horizon:auth_logout %}">{% trans "Sign Out" %}</a>
+  {% include "horizon/common/_region_selector.html" %}
+</div>
